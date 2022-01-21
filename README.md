@@ -27,3 +27,8 @@ Tested with:
 5. Build accelerator with FINN in docker
 6. Construct IP wrapper to interface with accelerator
 7. Deploy on FPGA
+
+
+## MISC
+- Runtime loadable weights: https://github.com/Xilinx/finn/discussions/380
+- 
