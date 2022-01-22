@@ -31,4 +31,5 @@ Tested with:
 
 ## MISC
 - Runtime loadable weights: https://github.com/Xilinx/finn/discussions/380
-- 
+- Brevitas bnn training: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/bnn_pynq
+- FINN bnn cnv: https://github.com/Xilinx/finn/blob/main/notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb
