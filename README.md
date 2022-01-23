@@ -34,3 +34,4 @@ Tested with:
 - Brevitas bnn training: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/bnn_pynq
 - FINN bnn cnv: https://github.com/Xilinx/finn/blob/main/notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb3
 - PE and SIMD: https://github.com/Xilinx/finn/discussions/501
+- imagenet models: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/imagenet_classification/models
