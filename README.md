@@ -35,3 +35,7 @@ Tested with:
 - FINN bnn cnv: https://github.com/Xilinx/finn/blob/main/notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb3
 - PE and SIMD: https://github.com/Xilinx/finn/discussions/501
 - imagenet models: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/imagenet_classification/models
+- GPU in FINN docker: https://github.com/Xilinx/finn/discussions/507
+- Feature dimension going into a maxpool layer (size=2, stride=2) must be divisible by 2:
+  Input image size 32x32: 32 (padded conv2d) 32 (maxpool) 16 (padded conv2d) 16 (maxpool) 8 ... (Good)
+  Input image size 30x30: 30 (padded conv2d) 30 (maxpool) 15 (padded conv2d) 15 (maxpool) 7? (Bad?)
