@@ -39,3 +39,4 @@ Tested with:
 - Feature dimension going into a maxpool layer (size=2, stride=2) must be divisible by 2:
   Input image size 32x32: 32 (padded conv2d) 32 (maxpool) 16 (padded conv2d) 16 (maxpool) 8 ... (Good)
   Input image size 30x30: 30 (padded conv2d) 30 (maxpool) 15 (padded conv2d) 15 (maxpool) 7? (Bad?)
+- Minimize features in flattened layer between last CNV and first FC as this will likely consume most BRAMs.
