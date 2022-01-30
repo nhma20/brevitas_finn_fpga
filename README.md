@@ -41,4 +41,4 @@ Tested with:
   Input image size 32x32: 32 (padded conv2d) 32 (maxpool) 16 (padded conv2d) 16 (maxpool) 8 ... (Good)
   Input image size 30x30: 30 (padded conv2d) 30 (maxpool) 15 (padded conv2d) 15 (maxpool) 7? (Bad?)
 - Minimize features in flattened layer between last CNV and first FC as this will likely consume most BRAMs.
-- In folding_config.json, ram_style used to determine if BRAM (´block´), URAM (´uram´), or LUT (´distributed´) should be used to store values. Can set ´auto´ to determine automatically. 
+- In folding_config.json, ram_style used to determine if BRAM (`block`), URAM (`uram`), or LUT (`distributed`) should be used to store values. Can set `auto` to determine automatically. 
