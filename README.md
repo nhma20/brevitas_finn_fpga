@@ -24,7 +24,7 @@ Tested with:
 2. Gather dataset
 3. Define and train quantized network with Brevitas
 4. Export to FINN
-5. Build accelerator with FINN in docker
+5. Explore folding settings with estimate reports and build accelerator with FINN in docker
 6. Construct IP wrapper to interface with accelerator
 7. Deploy on FPGA
 
