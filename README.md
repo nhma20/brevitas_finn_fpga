@@ -6,7 +6,12 @@ Neural network inference on FPGA with Brevitas and FINN
 
 
 ### Prerequisites
-Ultra96V2 board, PC (with GPU recommended for training)
+- Ultra96V2 board (other FPGAs supported with slight modifications)
+- PC (with GPU recommended for training),
+- Xilinx tools (Vivado, HLS, Vitis)
+- Environment(s) with [Brevitas](https://github.com/Xilinx/brevitas) and [FINN](https://github.com/Xilinx/finn)
+
+
 
 Tested with:
 - `Ubuntu 20.04.3 LTS (host PC - R3950X+32GB+RTX2070Super)`
@@ -19,12 +24,13 @@ Tested with:
 
 
 
-## Flow
-1. Create environment that has Brevitas, Pytorch, ONNX etc.
-2. Gather dataset
-3. Define and train quantized network with Brevitas
-4. Export to FINN
-5. Explore folding settings with estimate reports and build accelerator with FINN in docker
+## Flow (without PYNQ)
+0. Install Xilins tools  and create environment that has Brevitas, Pytorch, ONNX etc.
+1. Gather dataset as outlined in /src/dataset_creation/ README
+2. Define and train quantized network with Brevitas as outlined in /src/notebooks/ README
+3. Export to FINN
+4. Explore folding settings with estimate reports and build accelerator with FINN in docker
+5. (Optional) Simulate accelerator to verify behavior (example in /src/notebooks/regression_BNN/simulation/)
 6. Construct IP wrapper to interface with accelerator
 7. Deploy on FPGA
 
@@ -38,7 +44,10 @@ Tested with:
 - imagenet models: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/imagenet_classification/models
 - GPU in FINN docker: https://github.com/Xilinx/finn/discussions/507
 - Feature dimension going into a maxpool layer (size=2, stride=2) must be divisible by 2:
+
   Input image size 32x32: 32 (padded conv2d) 32 (maxpool) 16 (padded conv2d) 16 (maxpool) 8 ... (Good)
+  
   Input image size 30x30: 30 (padded conv2d) 30 (maxpool) 15 (padded conv2d) 15 (maxpool) 7? (Bad?)
+  
 - Minimize features in flattened layer between last CNV and first FC as this will likely consume most BRAMs.
 - In folding_config.json, ram_style used to determine if BRAM (`block`), URAM (`uram`), or LUT (`distributed`) should be used to store values. Can set `auto` to determine automatically. 
