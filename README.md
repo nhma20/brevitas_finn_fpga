@@ -33,7 +33,7 @@ Tested with:
 - Interfacing with FINN generated accelerator IP: https://github.com/jterry-x/finn-examples/tree/main/build/fpga_flow#simulating-the-stitched-ip-with-verilog-test-bench
 - Runtime loadable weights: https://github.com/Xilinx/finn/discussions/380
 - Brevitas bnn training: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/bnn_pynq
-- FINN bnn cnv: https://github.com/Xilinx/finn/blob/main/notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb3
+- FINN bnn cnv: https://github.com/Xilinx/finn/blob/main/notebooks/end2end_example/bnn-pynq/cnv_end2end_example.ipynb
 - PE and SIMD: https://arxiv.org/pdf/1612.07119.pdf and https://github.com/Xilinx/finn/discussions/501
 - imagenet models: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/imagenet_classification/models
 - GPU in FINN docker: https://github.com/Xilinx/finn/discussions/507
