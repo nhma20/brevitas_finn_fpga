@@ -51,3 +51,4 @@ Tested with:
   
 - Minimize features in flattened layer between last CNV and first FC as this will likely consume most BRAMs.
 - In folding_config.json, ram_style used to determine if BRAM (`block`), URAM (`uram`), or LUT (`distributed`) should be used to store values. Can set `auto` to determine automatically. 
+- Fix /tmp/ IP dependency: https://github.com/Xilinx/finn/discussions/404
