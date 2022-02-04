@@ -36,6 +36,7 @@ Tested with:
 
 
 ## MISC
+- Useful FAQ on FINN: https://finn.readthedocs.io/en/latest/faq.html
 - Interfacing with FINN generated accelerator IP: https://github.com/jterry-x/finn-examples/tree/main/build/fpga_flow#simulating-the-stitched-ip-with-verilog-test-bench
 - Runtime loadable weights: https://github.com/Xilinx/finn/discussions/380
 - Brevitas bnn training: https://github.com/Xilinx/brevitas/tree/master/src/brevitas_examples/bnn_pynq
