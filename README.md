@@ -51,7 +51,7 @@ Tested with:
   Input image size 30x30: 30 (padded conv2d) 30 (maxpool) 15 (padded conv2d) 15 (maxpool) 7? (Bad?)
   
 - Minimize features in flattened layer between last CNV and first FC as this will likely consume most BRAMs.
-- In folding_config.json, ram_style used to determine if BRAM (`block`), URAM (`uram`), or LUT (`distributed`) should be used to store values. Can set `auto` to determine automatically. 
+- In folding_config.json, ram_style used to determine if BRAM (`block`), URAM (`uram`), or LUT (`distributed`) should be used to store values. Can set `auto` to determine automatically. Only works if `mem_mode` is not `const` https://github.com/Xilinx/finn/blob/dev/src/finn/custom_op/fpgadataflow/streamingfclayer_batch.py#L95
 - Fix /tmp/ IP dependency: https://github.com/Xilinx/finn/discussions/404
 - List of all FINN generated verilog source files can be found in `<FINN_output_dir>/stitched_ip/all_verilog_srcs.txt`
 - `memstream` or `*_wstrm` files not found: likely because wrong IP repository path. Point to /finn/finn-rtllib/memstream instead. 
