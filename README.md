@@ -26,13 +26,14 @@ Tested with:
 
 ## Flow (without PYNQ)
 0. Install Xilins tools  and create environment that has Brevitas, Pytorch, ONNX etc.
-1. Gather dataset as outlined in /src/dataset_creation/ README
-2. Define and train quantized network with Brevitas as outlined in /src/notebooks/ README
-3. Export to FINN
-4. Explore folding settings with estimate reports and build accelerator with FINN in docker
-5. (Optional) Simulate accelerator to verify behavior (example in /src/notebooks/regression_BNN/simulation/)
-6. Construct IP wrapper to interface with accelerator
-7. Deploy on FPGA
+1. Gather dataset as outlined in /src/dataset_creation/ README.
+2. Define and train quantized network with Brevitas as outlined in /src/notebooks/ README.
+3. Export to FINN.
+4. Explore folding settings with estimate reports and build accelerator with FINN in docker.
+5. Create pseudo IP for easy Vivado import in any project as outlined in /src/pseudo_ip/ README.
+6. (Optional) Simulate accelerator to verify behavior (example in /src/notebooks/regression_BNN/simulation/).
+7. Construct IP wrapper to interface with accelerator.
+8. Deploy on FPGA.
 
 
 ## MISC
