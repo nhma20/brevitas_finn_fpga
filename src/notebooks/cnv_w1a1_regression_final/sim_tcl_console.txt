@@ -1,0 +1,87 @@
+run all
+Comparison 1:
+Prediction:        226,        152,         58,         84
+     Label: 233, 173,  87,  97
+ 
+Comparison 2:
+Prediction:        162,        152,          8,         80
+     Label: 146, 176,   2,  79
+ 
+Comparison 3:
+Prediction:        222,        186,         52,        116
+     Label: 252, 217,  78, 149
+ 
+Comparison 4:
+Prediction:        226,        170,         54,         98
+     Label: 245, 207, 106, 130
+ 
+Comparison 5:
+Prediction:        220,        174,         40,         96
+     Label: 209, 202,  52,  91
+ 
+Comparison 6:
+Prediction:        198,        158,          8,         76
+     Label: 253, 141,  57,  34
+ 
+Comparison 7:
+Prediction:        210,        152,         50,         98
+     Label: 221, 155,  71,  85
+ 
+Comparison 8:
+Prediction:        192,        152,         66,         92
+     Label: 198, 173,  99,  79
+ 
+Comparison 9:
+Prediction:        196,        156,         14,         96
+     Label: 198, 130,  57,  80
+ 
+Comparison 10:
+Prediction:        216,        128,         74,         68
+     Label: 210, 128, 107,  85
+ 
+Comparison 11:
+Prediction:        180,        176,         32,        120
+     Label: 198, 227,  92, 158
+ 
+Comparison 12:
+Prediction:        178,        190,          8,        118
+     Label: 168, 223,  61, 155
+ 
+Comparison 13:
+Prediction:        198,        158,         30,         96
+     Label: 203, 152, 115, 112
+ 
+Comparison 14:
+Prediction:        154,        144,         72,        100
+     Label: 146, 139,  59,  88
+ 
+Comparison 15:
+Prediction:        194,        152,         20,         74
+     Label: 206,  92,  70,  48
+ 
+Comparison 16:
+Prediction:        180,        178,         36,         96
+     Label: 189, 186,  56,  99
+ 
+Comparison 17:
+Prediction:        186,        178,         22,        122
+     Label: 201, 234,  73, 196
+ 
+Comparison 18:
+Prediction:        192,        170,         44,        118
+     Label: 205, 147, 101, 103
+ 
+Comparison 19:
+Prediction:        192,        136,         38,         72
+     Label: 213, 171,  44,  28
+ 
+Comparison 20:
+Prediction:        172,        164,          8,        114
+     Label:  61, 141,  25, 108
+ 
+
+************************************************************ 
+  SIM COMPLETE
+  Validated 20 data points 
+$finish called at time : 128596880 ns : File "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/cnv_w1a1_resize_regression_V5_surgery/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/sim_1/imports/fpga_flow/testbench.sv" Line 149
+run: Time (s): cpu = 00:37:26 ; elapsed = 04:56:19 . Memory (MB): peak = 9716.727 ; gain = 0.000 ; free physical = 1075 ; free virtual = 27024
