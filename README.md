@@ -57,3 +57,4 @@ Tested with:
 - List of all FINN generated verilog source files can be found in `<FINN_output_dir>/stitched_ip/all_verilog_srcs.txt`
 - `memstream` or `*_wstrm` files not found: likely because wrong IP repository path. Point to /finn/finn-rtllib/memstream instead. 
 - FINN build may produce error if building more than once in same directory.
+- May be necessary to increase weight/activation bits for simulation/hardware to meet Brevitas performance
