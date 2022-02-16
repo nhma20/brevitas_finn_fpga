@@ -58,3 +58,5 @@ Tested with:
 - `memstream` or `*_wstrm` files not found: likely because wrong IP repository path. Point to /finn/finn-rtllib/memstream instead. 
 - FINN build may produce error if building more than once in same directory.
 - May be necessary to increase weight/activation bits for simulation/hardware to meet Brevitas performance
+- [Place 30-487] The packing of instances into the device could not be obeyed. There are a total of 8820 CLBs in the device, of which 4904 CLBs are available, however, the unplaced instances require 5238 CLBs. Please analyze your design to determine if the number of LUTs, FFs, and/or control sets can be reduced.
+Run: `report_qor_suggestions` in Tcl console possible suggestions. Try alternative directives or strategies during synthesis/implementation (can be found in project summary).
