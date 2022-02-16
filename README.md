@@ -60,4 +60,5 @@ Tested with:
 - May be necessary to increase weight/activation bits for simulation/hardware to meet Brevitas performance
 - [Place 30-487] The packing of instances into the device could not be obeyed. There are a total of 8820 CLBs in the device, of which 4904 CLBs are available, however, the unplaced instances require 5238 CLBs. Please analyze your design to determine if the number of LUTs, FFs, and/or control sets can be reduced.
 Run: `report_qor_suggestions` in Tcl console possible suggestions. Try alternative directives or strategies during synthesis/implementation (can be found in project summary).
+  - Area_ExploreWithRemap may work.
 - Can use PE and SIMD of last layer to change shape of output, e.g. from 32 bits to 8 bits (read 4 times sequentially). PE and SIMD values above 1 may result in high ressource usage.
