@@ -1,12 +1,16 @@
 from distutils.dir_util import copy_tree
 import copy
+import sys
 
 
-make_project_tcl_path = "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/cnv_w1a1_resize_regression_V5_surgery/stitched_ip_vivado_proj/vivado_stitch_proj_or5_fmik/collected_src_files/make_project.tcl"
 
-finn_rtllib_path = "/home/nm/FINN/hls_2020_2/finn/finn-rtllib/memstream"
+#finn_rtllib_path = "/home/nm/FINN/hls_2020_2/finn/finn-rtllib/memstream"
+finn_rtllib_path = sys.argv[1] #
 
-ip_copy_destination_path = "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/cnv_w1a1_resize_regression_V5_surgery/stitched_ip_vivado_proj/vivado_stitch_proj_or5_fmik/collected_src_files/src_ips"
+#make_project_tcl_path = "./make_project.tcl"
+make_project_tcl_path = sys.argv[2] + "make_project.tcl"
+
+ip_copy_destination_path = sys.argv[3]
 
 # Read 2nd line of "make_project.tcl" which has all IP paths
 with open(make_project_tcl_path) as fp:

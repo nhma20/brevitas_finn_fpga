@@ -1,0 +1,73 @@
+Comparison 1:
+Prediction:        218,        208,         54,        136
+     Label: 217, 207,  56, 129
+ 
+Comparison 2:
+Prediction:        206,         98,         54,         22
+     Label: 202,  88,  56,  24
+ 
+Comparison 3:
+Prediction:        248,        232,         70,        152
+     Label: 247, 213,  57, 149
+ 
+Comparison 4:
+Prediction:        192,        174,         44,        122
+     Label: 181, 167,  41, 112
+ 
+Comparison 5:
+Prediction:        216,        122,         50,         36
+     Label: 212, 121,  47,  40
+ 
+Comparison 6:
+Prediction:        206,        142,         80,         80
+     Label: 204, 145,  79,  71
+ 
+Comparison 7:
+Prediction:        188,        202,         86,        120
+     Label: 182, 205,  85, 110
+ 
+Comparison 8:
+Prediction:        254,        128,         10,         36
+     Label: 242, 121,  10,  29
+ 
+Comparison 9:
+Prediction:        222,        198,         12,        120
+     Label: 240, 211,  10, 129
+ 
+Comparison 10:
+Prediction:        192,        142,         70,         72
+     Label: 198, 172,  75,  74
+ 
+Comparison 11:
+Prediction:        250,        124,         22,         46
+     Label: 241, 126,  18,  28
+ 
+Comparison 12:
+Prediction:        224,        138,         58,         80
+     Label: 214, 139,  57,  78
+ 
+Comparison 13:
+Prediction:        218,        166,         50,        102
+     Label: 212, 161,  54,  99
+ 
+Comparison 14:
+Prediction:        218,        130,         64,         50
+     Label: 212, 125,  70,  60
+ 
+Comparison 15:
+Prediction:        170,        130,         42,         50
+     Label: 178, 129,  36,  43
+ 
+Comparison 16:
+Prediction:        214,        178,         50,         94
+     Label: 217, 167,  47, 104
+ 
+NOTICE: Last label x_min value may be printed wrong
+ 
+
+************************************************************ 
+  SIM COMPLETE
+  Validated 16 data points 
+$finish called at time : 392228550 ns : File "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/__sw_sim_hw_test__/cnv_w1a2_TEST_A_W_BITS/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/sim_1/new/testbench.sv" Line 153
+run: Time (s): cpu = 01:41:36 ; elapsed = 16:21:21 . Memory (MB): peak = 9601.496 ; gain = 0.000 ; free physical = 266 ; free virtual = 8561
+

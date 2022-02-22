@@ -1,14 +1,20 @@
 from distutils.dir_util import copy_tree
 import copy
+import os 
+import sys
 
 
-make_project_tcl_path = "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/cnv_w1a1_resize_regression_V5_surgery/stitched_ip_vivado_proj/vivado_stitch_proj_or5_fmik/collected_src_files/make_project.tcl"
+cur_dir_path = os.path.dirname(os.path.realpath(__file__))
 
-finn_rtllib_path = "/home/nm/FINN/hls_2020_2/finn/finn-rtllib/memstream"
 
-ip_copy_destination_path = "/home/nm/FINN/hls_2020_2/finn/notebooks/end2end_example/cnv_w1a1_resize_regression_V5_surgery/stitched_ip_vivado_proj/vivado_stitch_proj_or5_fmik/collected_src_files/src_ips"
 
-tmp_finn_dir = "/tmp/finn_dev_nm"
+make_project_tcl_path = sys.argv[2]
+
+finn_rtllib_path = sys.argv[1]
+
+ip_installation_path = sys.argv[3]
+
+tmp_finn_dir = "/temp_dir_name"
 
 wrong_memstream_path = "/workspace/finn/finn-rtllib/memstream"
 
@@ -50,7 +56,7 @@ with open(make_project_tcl_path) as fp:
 
 # fix memstream path
 new_make_project_tcl = new_make_project_tcl.replace(wrong_memstream_path, finn_rtllib_path)
-new_make_project_tcl = new_make_project_tcl.replace(tmp_finn_dir, ip_copy_destination_path)
+new_make_project_tcl = new_make_project_tcl.replace(tmp_finn_dir, ip_installation_path)
 
 # remove duplicates of bd elements in list
 bd_names = list(dict.fromkeys(bd_names))
@@ -65,9 +71,9 @@ new_make_project_tcl += "\nregenerate_bd_layout\nsave_bd_design"
 
 
 # write the file out
-with open(make_project_tcl_path.replace("make_project.tcl", "import_finn_ip.tcl"), 'w') as file:
+with open((cur_dir_path+"/import_finn_ip.tcl"), 'w') as file:
 	file.write(new_make_project_tcl)
 	
-print("Created: ", make_project_tcl_path.replace("make_project.tcl", "import_finn_ip.tcl"))
+print("Created: ", (cur_dir_path+"/import_finn_ip.tcl"))
 
 

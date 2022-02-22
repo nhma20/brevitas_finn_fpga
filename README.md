@@ -63,3 +63,4 @@ Run: `report_qor_suggestions` in Tcl console possible suggestions. Try alternati
   - Area_ExploreWithRemap may work.
 - Can use PE and SIMD of last layer to change shape of output, e.g. from 32 bits to 8 bits (read 4 times sequentially). PE and SIMD values above 1 in this layer may result in high ressource usage.
 - Lower estimated throughput (FPS) results in longer build times (FIFO depths step specifically) https://github.com/Xilinx/finn/discussions/383
+
