@@ -4,6 +4,8 @@ FPGA Accelerated AI
 Neural network inference on FPGA with Brevitas and FINN
 ----------------------------------------------------------------------------
 
+![11](https://user-images.githubusercontent.com/76950970/155093751-682b845f-4a02-4480-80c2-c647df1c4f1a.png)
+![test_video](https://user-images.githubusercontent.com/76950970/155094692-dbe58875-cef0-430b-8da7-96afd5dd1b6a.gif)
 
 ### Prerequisites
 - Ultra96V2 board (other FPGAs supported with slight modifications)
