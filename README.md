@@ -37,6 +37,8 @@ Tested with:
 7. Construct IP wrapper to interface with accelerator.
 8. Deploy on FPGA.
 
+A stitched FINN IP with two interfacing modules in an MPSoC Vivado diagram could look like:
+![MP4D-AI-diagram](https://user-images.githubusercontent.com/76950970/163165886-da81e2cd-f80f-420b-80a6-6db6d649593c.png)
 
 ## MISC
 - Useful FAQ on FINN: https://finn.readthedocs.io/en/latest/faq.html
