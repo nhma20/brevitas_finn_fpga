@@ -11,3 +11,8 @@ W1A2 CNN for person detection (bounding box regression)
 
 Outputs of generated IP should be multiplied by 2 to obtain the actual value.
 
+Example of how to wrap with writing/reading modules:
+https://github.com/DIII-SDU-Group/finn-example-ip
+
+Example of how to interface writing/reading modules from software:
+https://github.com/DIII-SDU-Group/finn-example-ROS2-pkg
